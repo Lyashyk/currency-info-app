@@ -3,9 +3,8 @@ import NavigationButton from '../navigation-button/navigation-button';
 
 import './app-scene.css';
 
-const AppScene = () => {
-
-    return <div className="AppScene">
+const AppScene = () => (
+    <div className="AppScene">
         <div className="AppScene-nav">
             <div className="AppScene-navItem"><NavigationButton path="/table" title="Таблица" /></div>
             <div className="AppScene-navItem"><NavigationButton path="/converter" title="Конвертер" /></div>
@@ -16,6 +15,6 @@ const AppScene = () => {
             <ContentScene />
         </div>
     </div>
-}
+)
 
 export default AppScene;
