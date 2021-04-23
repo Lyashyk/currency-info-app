@@ -11,7 +11,7 @@ const ContentScene = () => (
         <Route path="/converter" component={ContentConterter} exact />
         <Route path="/shedule" component={ContentShedule} exact />
         <Route path="/eror-404" component={ErrorRoute} exact />
-        <Redirect from="/" to="/table" />
+        <Redirect from="/" to="/table" exact />
         <Redirect to="/eror-404" />
     </Switch>
 )

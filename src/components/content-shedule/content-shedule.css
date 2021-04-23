@@ -1,0 +1,37 @@
+.ContentShedule-title{
+    font-size: 32px;
+    margin-bottom: 42px;
+    text-align: center;
+}
+
+.ContentShedule-plot{
+    padding: 0 32px;
+}
+
+.ContentShedule-loader{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80vh;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ContentShedule-castomTooltip{
+    background-color: #fff;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+
+.ContentShedule-castomTooltItem{
+    margin-bottom: 8px;
+}
+
+.ContentShedule-castomTooltItem:last-child{
+    margin-bottom: 0;
+}

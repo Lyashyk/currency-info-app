@@ -12,6 +12,11 @@
     font-weight: 700;
 }
 
+.NavigationButton:hover{
+    text-decoration: none;
+    color: #000;
+}
+
 .NavigationButton::after {
     content: '';
     position: absolute;

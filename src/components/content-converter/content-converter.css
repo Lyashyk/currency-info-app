@@ -1,0 +1,48 @@
+.ContentConverter{
+    position: relative;
+    height: 40vh;
+}
+
+.ContentConverter-loader{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ContentConverter-grid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ContentConverter-gridInputItem{
+    flex: 0 0 120px;
+    padding: 8px;
+}
+
+.ContentConverter-gridSelectItem{
+    padding: 8px;
+}
+
+.ContentConverter-gridAction{
+    padding: 16px;
+}
+
+.ContentConverter-gridActionButton{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+.ContentConverter-image{
+    width: 100%;
+}
