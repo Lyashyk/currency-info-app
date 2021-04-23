@@ -2,21 +2,16 @@ import { Spinner } from 'reactstrap';
 import { useSelector } from 'react-redux';
 
 import { getIsTableLoading } from '../../ducks/table';
-import { getTable, getTableCurrentDate, getDataByCurrentDate } from '../../ducks/table';
+import { getTableCurrentDate } from '../../ducks/table';
+
 import DateForm from './date-form';
-import Grid from './gtid';
+import Grid from './grid';
 
 import './content-table.css';
 
 const ContentTable = () => {
-
-    const table = useSelector(getTable);
     const currentDate = useSelector(getTableCurrentDate);
-
     const isTableLoading = useSelector(getIsTableLoading);
-
-    const currencyList = useSelector(getDataByCurrentDate(currentDate));
-
 
     return (
         <div className="ContentTable">
@@ -28,13 +23,13 @@ const ContentTable = () => {
             }
 
             <div className="ContentTable-form">
-                <DateForm table={table} currentDate={currentDate} />
+                <DateForm currentDate={currentDate} />
             </div>
 
             <div className="ContentTable-title">Курс валют по состоянию на {currentDate}</div>
 
             <div className="ContentTable-grid">
-                <Grid table={table} currentDate={currentDate} />
+                <Grid currentDate={currentDate} />
             </div>
         </div>
     )
