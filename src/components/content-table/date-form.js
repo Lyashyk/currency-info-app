@@ -4,7 +4,8 @@ import { Form, Label, Input, Button, FormGroup, FormFeedback } from 'reactstrap'
 
 import { setCurrentDate } from '../../ducks/table';
 
-import { writeToLocalStorige, getDifferenceOfDatesByDay } from "../../utils";
+import { writeToLocalStorige } from "../../utils";
+import { getDifferenceOfDatesByDay } from './helpers';
 
 const DateForm = ({ currentDate }) => {
     const dispatch = useDispatch();

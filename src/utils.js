@@ -28,20 +28,6 @@ export const createRequest = url => (query = {}) => {
     );
 }
 
-const checkZero = str => {
-    if (+str < 10) {
-        return `0${str}`
-    }
-
-    return str
-}
-
-export const getСurrentDate = () => {
-    const dateNow = new Date();
-
-    return `${dateNow.getFullYear()}-${checkZero(+dateNow.getMonth() + 1)}-${checkZero(dateNow.getDate())}`
-};
-
 export const writeToLocalStorige = (key, data) => {
     window.localStorage.setItem(key, JSON.stringify(data))
 }
@@ -56,11 +42,16 @@ export const dateToRequestString = date => {
     return `${_dateArr[0]}${_dateArr[1]}${_dateArr[2]}`
 }
 
-export const getDifferenceOfDatesByDay = (currentDate) => {
-    const _currentDate = new Date(currentDate);
-    const __nowDate = new Date();
-    __nowDate.setHours(3, 0, 0, 0);
+const checkZero = str => {
+    if (+str < 10) {
+        return `0${str}`
+    }
 
-    return __nowDate - _currentDate >= 0;
-
+    return str
 }
+
+export const getСurrentDate = () => {
+    const dateNow = new Date();
+
+    return `${dateNow.getFullYear()}-${checkZero(+dateNow.getMonth() + 1)}-${checkZero(dateNow.getDate())}`
+};
