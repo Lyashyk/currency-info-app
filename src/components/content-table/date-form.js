@@ -1,38 +1,27 @@
 import { useCallback, useState } from 'react';
-import { useDispatch, } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { Form, Label, Input, Button, FormGroup, FormFeedback } from 'reactstrap';
 
-import { requestTable, setCurrentDate } from '../../ducks/table';
+import { setCurrentDate } from '../../ducks/table';
 
 import { writeToLocalStorige, getDifferenceOfDatesByDay } from "../../utils";
 
-const DateForm = ({ table, currentDate }) => {
+const DateForm = ({ currentDate }) => {
     const dispatch = useDispatch();
-
 
     const [date, setDate] = useState(currentDate);
 
-
-
-    const handleSubmit = (e) => {
+    const handleSubmit = e => {
         e.preventDefault();
-
-        if (!date) {
-            return
-        }
 
         writeToLocalStorige('selected_date', date);
 
-        if (!table[date]) {
-            dispatch(requestTable(date));
-        } else {
-            dispatch(setCurrentDate(date))
-        }
+        dispatch(setCurrentDate(date))
     }
 
     const getErrorInput = () => !getDifferenceOfDatesByDay(new Date(date));
 
-    const handleChange = useCallback((e) => { setDate(e.target.value) }, [])
+    const handleChange = useCallback(e => { setDate(e.target.value) }, [])
 
     return (
         <Form onSubmit={handleSubmit}>
