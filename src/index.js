@@ -8,11 +8,8 @@ import thunk from 'redux-thunk';
 import logger from 'redux-logger'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-// import { initApi } from './api';
-
 const store = createStore(reducer, applyMiddleware(thunk, logger));
 
-// initApi();
 
 ReactDOM.render(
   <Provider store={store}>

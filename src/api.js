@@ -6,7 +6,8 @@ const createApi = () => {
 
     return {
         headingForDate: (date) => request({ date }),
-        headingForNowDate: () => request()
+        headingForNowDate: () => request(),
+        headingForCurrenDateAndCurrentCurrency: (valcode, date) => request({ valcode, date })
     }
 }
 

@@ -55,3 +55,17 @@ export const getСurrentDate = () => {
 
     return `${dateNow.getFullYear()}-${checkZero(+dateNow.getMonth() + 1)}-${checkZero(dateNow.getDate())}`
 };
+
+export const genereteDefaultArr = (start, end) => {
+    let arr = [];
+
+    for (let i = start; i <= end; i++) {
+        if (i < 10) {
+            i = `0${i}`;
+        }
+
+        arr.push({ valcode: 'EUR', date: `2020${i}01` })
+    }
+
+    return arr;
+}
