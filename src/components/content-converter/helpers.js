@@ -6,5 +6,5 @@ export const getConversion = (currencyList, changeableCode, selectCode, changebl
         return ((isChangebleExist.rate / isSelectExist.rate) * changebleCurrentAmount).toFixed(4)
     }
 
-    return null
+    return ''
 }

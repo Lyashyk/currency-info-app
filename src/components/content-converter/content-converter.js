@@ -29,8 +29,8 @@ const ContentConverter = () => {
     // states
 
     const [changeableCurrencyAmount, setChangeableCurrencyAmount] = useState(100);
-    const [changeableCurrencyCode, setChangeableCurrencyCode] = useState();
-    const [selectCurrencyCode, setSelectCurrencyCodeCodeChange] = useState();
+    const [changeableCurrencyCode, setChangeableCurrencyCode] = useState('');
+    const [selectCurrencyCode, setSelectCurrencyCodeCodeChange] = useState('');
 
     // useEffects
 
