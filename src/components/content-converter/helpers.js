@@ -1,9 +1,14 @@
-export const getConversion = (selectCodeItem, changeableCodeItem, changebleCurrentAmount) => {
+export const getConversion = (
+  selectCodeItem,
+  changeableCodeItem,
+  changebleCurrentAmount
+) => {
+  if (!changeableCodeItem || !selectCodeItem) {
+    return "";
+  }
 
-    if (!changeableCodeItem || !selectCodeItem) {
-        return ''
-    }
-
-    return ((changeableCodeItem.rate / selectCodeItem.rate) * changebleCurrentAmount).toFixed(4)
-
-}
+  return (
+    (changeableCodeItem.rate / selectCodeItem.rate) *
+    changebleCurrentAmount
+  ).toFixed(4);
+};
