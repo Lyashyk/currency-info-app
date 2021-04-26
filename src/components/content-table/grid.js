@@ -4,6 +4,8 @@ import { Table } from 'reactstrap';
 
 import { requestTable, getDataByCarrentDate } from '../../ducks/table';
 
+import { IconFavorites } from '../icons';
+
 const Grid = ({ currentDate }) => {
     const dispatch = useDispatch();
     const currencyList = useSelector(getDataByCarrentDate);
@@ -29,6 +31,7 @@ const Grid = ({ currentDate }) => {
                     <th>Rate</th>
                 </tr>
             </thead>
+
             <tbody>
                 {
                     currencyList.map(({ code, title, rate }) => (
@@ -36,6 +39,11 @@ const Grid = ({ currentDate }) => {
                             <th scope="row">{code}</th>
                             <td>{title}</td>
                             <td>{rate}</td>
+                            <td>
+                                <div className="ContentTable-iconContainer">
+                                    <IconFavorites />
+                                </div>
+                            </td>
                         </tr>
                     ))
                 }

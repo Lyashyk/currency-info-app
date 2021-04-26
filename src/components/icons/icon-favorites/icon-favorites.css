@@ -1,0 +1,11 @@
+.IconStar{
+    display: inline-block;
+    fill: none;
+    stroke: #ffd12c;
+    height: 100%;
+    vertical-align: top;
+}
+
+.IconStar--favorites{
+    fill: #ffd12c;
+}
