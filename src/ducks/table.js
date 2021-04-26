@@ -1,4 +1,4 @@
-import { createAction, dateToRequestString, readFromLocalStorige, getСurrentDate } from "../utils";
+import { createAction, dateToRequestString, getСurrentDate } from "../utils";
 import api from '../api';
 
 
@@ -43,7 +43,7 @@ const normilizeList = list => list.map(({ cc, txt, rate }) => ({ code: cc, title
 const initialState = {
     currencyRate: {},
     isTableLoading: false,
-    currentDate: readFromLocalStorige('selected_date') || getСurrentDate()
+    currentDate: getСurrentDate()
 };
 
 const reducer = (state = initialState, { type, payload }) => {
