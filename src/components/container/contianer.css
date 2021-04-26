@@ -1,6 +1,6 @@
-.Container{
-    max-width:960px;
-    margin: 0 auto;
-    padding: 0 32px;
-    box-sizing: border-box;
+.Container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 32px;
+  box-sizing: border-box;
 }

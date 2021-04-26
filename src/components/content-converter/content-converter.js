@@ -24,7 +24,7 @@ const ContentConverter = () => {
   const list = useSelector(getList);
   const itemBySelectCurrencyCode = useSelector(getItemBySelectCurrencyCode);
   const itemByChangeableCurrencyCode = useSelector(
-    getItemByChangeableCurrencyCode,
+    getItemByChangeableCurrencyCode
   );
 
   useEffect(() => {
@@ -43,21 +43,21 @@ const ContentConverter = () => {
     (e) => {
       dispatch(setChangeableCurrencyCodeCallback(e.target.value));
     },
-    [dispatch],
+    [dispatch]
   );
 
   const handleSelectCurrencyCodeCodeChange = useCallback(
     (e) => {
       dispatch(setSelectCurrencyCodeCallback(e.target.value));
     },
-    [dispatch],
+    [dispatch]
   );
 
   const getSelectCurrencyValue = () =>
     getConversion(
       itemBySelectCurrencyCode,
       itemByChangeableCurrencyCode,
-      changeableCurrencyAmount,
+      changeableCurrencyAmount
     );
 
   const swapCode = useCallback(() => {

@@ -1,20 +1,20 @@
-.AppScene-nav{
-    padding: 32px;
-    display: flex;
-    justify-content: center;
-    margin: 8px 0 24px;
-    box-shadow: 0 1px 10px 0 rgb(0 0 0 / 10%);
+.AppScene-nav {
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+  margin: 8px 0 24px;
+  box-shadow: 0 1px 10px 0 rgb(0 0 0 / 10%);
 }
 
-.AppScene-navItem{
-    padding: 0 32px;
+.AppScene-navItem {
+  padding: 0 32px;
 }
 
-.AppScene-navItem:last-child{
-    margin-right: 0;
+.AppScene-navItem:last-child {
+  margin-right: 0;
 }
 
 .AppScene-content {
-    background-color: #f5f8fb;
-    padding: 32px;
+  background-color: #f5f8fb;
+  padding: 32px;
 }

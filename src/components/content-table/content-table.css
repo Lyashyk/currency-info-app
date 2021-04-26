@@ -1,35 +1,35 @@
-.ContentTable{
-    position: relative;
+.ContentTable {
+  position: relative;
 }
 
-.ContentTable-loader{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.6);
-    display: flex;
-    justify-content: center;
-    padding-top: 40vh;
+.ContentTable-loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  justify-content: center;
+  padding-top: 40vh;
 }
 
-.ContentTable-form{
-    margin-bottom: 32px;
+.ContentTable-form {
+  margin-bottom: 32px;
 }
 
-.ContentTable-title{
-    margin-bottom: 24px;
+.ContentTable-title {
+  margin-bottom: 24px;
 }
 
-.ContentTable-iconContainer{
-    height: 24px;
+.ContentTable-iconContainer {
+  height: 24px;
 }
 
-.ContentTable-action{
-    padding: 4px;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
+.ContentTable-action {
+  padding: 4px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
