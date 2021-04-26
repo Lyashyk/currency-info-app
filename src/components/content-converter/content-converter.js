@@ -8,8 +8,8 @@ import {
   getItemBySelectCurrencyCode,
   getItemByChangeableCurrencyCode,
   request,
-  setChangeableCurrencyCode,
-  setSelectCurrencyCode,
+  setChangeableCurrencyCodeCallback,
+  setSelectCurrencyCodeCallback,
   swapCurrencyCodeCallback,
 } from "../../ducks/converter";
 import { getConversion } from "./helpers";
@@ -41,14 +41,14 @@ const ContentConverter = () => {
 
   const handleChangeableCurrencyCodeChange = useCallback(
     (e) => {
-      dispatch(setChangeableCurrencyCode(e.target.value));
+      dispatch(setChangeableCurrencyCodeCallback(e.target.value));
     },
     [dispatch],
   );
 
   const handleSelectCurrencyCodeCodeChange = useCallback(
     (e) => {
-      dispatch(setSelectCurrencyCode(e.target.value));
+      dispatch(setSelectCurrencyCodeCallback(e.target.value));
     },
     [dispatch],
   );
