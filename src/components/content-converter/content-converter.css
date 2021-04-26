@@ -1,49 +1,49 @@
-.ContentConverter{
-    position: relative;
-    height: 40vh;
+.ContentConverter {
+  position: relative;
+  height: 40vh;
 }
 
-.ContentConverter-loader{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.6);
+.ContentConverter-loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
-.ContentConverter-grid{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.ContentConverter-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.ContentConverter-gridInputItem{
-    flex: 0 0 120px;
-    padding: 8px;
+.ContentConverter-gridInputItem {
+  flex: 0 0 120px;
+  padding: 8px;
 }
 
-.ContentConverter-gridSelectItem{
-    padding: 8px;
+.ContentConverter-gridSelectItem {
+  padding: 8px;
 }
 
-.ContentConverter-gridAction{
-    padding: 16px;
+.ContentConverter-gridAction {
+  padding: 16px;
 }
 
-.ContentConverter-gridActionButton{
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    border: none;
-    background-color: transparent;
-    outline: none;
-    cursor: pointer;
+.ContentConverter-gridActionButton {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
 }
 
-.ContentConverter-image{
-    width: 100%;
+.ContentConverter-image {
+  width: 100%;
 }

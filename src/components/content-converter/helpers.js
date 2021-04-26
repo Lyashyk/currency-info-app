@@ -1,10 +1,9 @@
-export const getConversion = (currencyList, changeableCode, selectCode, changebleCurrentAmount) => {
-    const isChangebleExist = currencyList.find(item => item.code === changeableCode)
-    const isSelectExist = currencyList.find(item => item.code === selectCode);
+export const getConversion = (selectCodeItem, changeableCodeItem, changebleCurrentAmount) => {
 
-    if (isChangebleExist && isSelectExist) {
-        return ((isChangebleExist.rate / isSelectExist.rate) * changebleCurrentAmount).toFixed(4)
+    if (!changeableCodeItem || !selectCodeItem) {
+        return ''
     }
 
-    return ''
+    return ((changeableCodeItem.rate / selectCodeItem.rate) * changebleCurrentAmount).toFixed(4)
+
 }
