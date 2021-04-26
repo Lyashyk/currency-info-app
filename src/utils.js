@@ -33,7 +33,7 @@ export const writeToLocalStorige = (key, data) => {
 }
 
 export const readFromLocalStorige = (key) => {
-    return JSON.parse(window.localStorage.getItem(key));
+    return JSON.parse(window.localStorage.getItem(key)) || null;
 }
 
 export const dateToRequestString = date => {
@@ -68,4 +68,18 @@ export const genereteDefaultArr = (start, end) => {
     }
 
     return arr;
+}
+
+export const toggleElementFromList = (list, item) => {
+    if (!list || list.length < 0) {
+        return [item];
+    }
+
+    const isItemExistOnList = list.find(currentItem => currentItem === item);
+
+    if (isItemExistOnList) {
+        return list.filter(currentItem => currentItem !== item);
+    }
+
+    return [...list, item];
 }
