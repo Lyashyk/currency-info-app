@@ -1,8 +1,7 @@
 import { Spinner } from 'reactstrap';
 import { useSelector } from 'react-redux';
 
-import { getIsTableLoading } from '../../ducks/table';
-import { getTableCurrentDate } from '../../ducks/table';
+import { getIsLoading, getCurrentDate } from '../../ducks/table';
 
 import DateForm from './date-form';
 import Grid from './grid';
@@ -10,8 +9,8 @@ import Grid from './grid';
 import './content-table.css';
 
 const ContentTable = () => {
-    const currentDate = useSelector(getTableCurrentDate);
-    const isTableLoading = useSelector(getIsTableLoading);
+    const currentDate = useSelector(getCurrentDate);
+    const isTableLoading = useSelector(getIsLoading);
 
     return (
         <div className="ContentTable">

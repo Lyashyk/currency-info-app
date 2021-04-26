@@ -21,3 +21,15 @@
 .ContentTable-title{
     margin-bottom: 24px;
 }
+
+.ContentTable-iconContainer{
+    height: 24px;
+}
+
+.ContentTable-action{
+    padding: 4px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
