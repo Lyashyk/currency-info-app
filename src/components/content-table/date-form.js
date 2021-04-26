@@ -4,7 +4,6 @@ import { Form, Label, Input, Button, FormGroup, FormFeedback } from 'reactstrap'
 
 import { setCurrentDate } from '../../ducks/table';
 
-import { writeToLocalStorige } from "../../utils";
 import { getDifferenceOfDatesByDay } from './helpers';
 
 const DateForm = ({ currentDate }) => {
@@ -12,13 +11,10 @@ const DateForm = ({ currentDate }) => {
 
     const [date, setDate] = useState(currentDate);
 
-    const handleSubmit = e => {
+    const handleSubmit = useCallback(e => {
         e.preventDefault();
-
-        writeToLocalStorige('selected_date', date);
-
         dispatch(setCurrentDate(date))
-    }
+    }, [date, dispatch])
 
     const getErrorInput = () => !getDifferenceOfDatesByDay(new Date(date));
 
